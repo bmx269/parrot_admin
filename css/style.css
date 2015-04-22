@@ -3260,7 +3260,7 @@ dd {
     margin-left: 180px; }
 
 hr {
-  margin: 28px 0;
+  margin: 5px 0;
   border: 0;
   border-top: 1px solid #eeeeee;
   border-bottom: 1px solid white; }
@@ -3327,6 +3327,29 @@ address {
   float: left;
   line-height: 19px;
   display: block; }
+
+.ctools-content ul.actions {
+  margin: 0px;
+  padding-left: 0px; }
+
+.views-ui-display-tab-actions .ctools-button-processed li a,
+.views-ui-display-tab-actions .ctools-button-processed input {
+  background: transparent none repeat scroll 0% 0%;
+  border: medium none;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: inherit;
+  padding-bottom: 0px;
+  padding-left: 12px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  color: #0088cc;
+  text-transform: none; }
+  .views-ui-display-tab-actions .ctools-button-processed li a:hover, .views-ui-display-tab-actions .ctools-button-processed li a:focus, .views-ui-display-tab-actions .ctools-button-processed li a:active,
+  .views-ui-display-tab-actions .ctools-button-processed input:hover,
+  .views-ui-display-tab-actions .ctools-button-processed input:focus,
+  .views-ui-display-tab-actions .ctools-button-processed input:active {
+    color: #005580; }
 
 code,
 pre {
@@ -4494,9 +4517,9 @@ input[type="button"], ul.action-links li a, #page-manager-links ul.links li a, .
   margin-top: 2px; }
 
 .btn-small, .compact-link a {
-  padding: 3px 9px;
-  font-size: 14px;
-  line-height: 26px; }
+  padding: 2px 7px;
+  font-size: 11px;
+  line-height: 16px; }
 
 .btn-small [class^="icon-"], .compact-link a [class^="icon-"] {
   margin-top: 0; }

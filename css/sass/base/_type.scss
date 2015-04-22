@@ -188,7 +188,7 @@ dd {
 
 // Horizontal rules.
 hr {
-  margin: $baseLineHeight 0;
+  margin: 5px 0;
   border: 0;
   border-top: 1px solid $hrBorder;
   border-bottom: 1px solid $white;
@@ -270,9 +270,35 @@ address {
 }
 
 .panel-portlet .grab-title .text {
-    margin-left: 3px;
-    font-size: 12px;
-    float: left;
-    line-height: 19px;
-    display: block;
+  margin-left: 3px;
+  font-size: 12px;
+  float: left;
+  line-height: 19px;
+  display: block;
+}
+
+.ctools-content ul.actions {
+    margin: 0px;
+    padding-left: 0px;
+}
+
+.views-ui-display-tab-actions .ctools-button-processed li a,
+.views-ui-display-tab-actions .ctools-button-processed input {
+  background: transparent none repeat scroll 0% 0%;
+  border: medium none;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: inherit;
+  padding-bottom: 0px;
+  padding-left: 12px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  color: $linkColor;
+  text-transform: none;
+
+  &:hover,
+  &:focus,
+  &:active{
+    color: $linkColorHover;
+  }
 }
