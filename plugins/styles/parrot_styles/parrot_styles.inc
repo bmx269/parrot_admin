@@ -23,7 +23,7 @@ $plugin = array(
   ),
 );
 
-function theme_parrot_styles_render_pane($vars) {
+function theme_parrot_admin_styles_render_pane($vars) {
   //$content = &$vars['content'];
   $settings = $vars['settings'];
 
@@ -82,7 +82,7 @@ function theme_parrot_styles_render_pane($vars) {
 
 
 // Configuration form for the pane/region settings.
-function parrot_styles_settings_form($style_settings, $panel_obj = null, $pane_id = null, $type = null) {
+function parrot_admin_styles_settings_form($style_settings, $panel_obj = null, $pane_id = null, $type = null) {
   $form['grid_width'] = array(
     '#type'          => 'select',
     '#title'         => t('Pane Width'),
