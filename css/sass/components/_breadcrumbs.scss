@@ -1,0 +1,28 @@
+//
+// Breadcrumbs
+// --------------------------------------------------
+
+
+.breadcrumb {
+  padding: 4px 0px;
+  margin: 0 0 10px;
+  list-style: none;
+  border-bottom: 1px solid #444;
+  color: #ccc;
+
+    a{
+      color: #ccc;
+    }
+
+  li {
+    @include inline-block;
+    text-shadow: none;
+  }
+  .divider {
+    padding: 0 5px;
+    color: #fff;
+  }
+  .active {
+    color: #ffft;
+  }
+}

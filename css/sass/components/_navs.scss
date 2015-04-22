@@ -1,0 +1,174 @@
+//
+// Navs
+// --------------------------------------------------
+
+#tab-wrapper{
+  background: $gray;
+  padding: 0;
+  overflow: hidden;
+
+  nav.tabs{
+    ul.primary {
+        border-bottom: none;
+        border-collapse: collapse;
+        height: auto;
+        line-height: normal;
+        list-style: outside none none;
+        margin: 0px;
+        padding: 0px;
+        white-space: normal;
+
+        li{
+          display: inline-block;
+          line-height: 1em;
+          margin-right: -4px;
+          margin-right: -4px;
+
+          a {
+            background-color: #DDD;
+            border-top: none;
+            border-right: 1px solid $grayLight;
+            border-left: none;
+            border-bottom: none;
+            height: auto;
+            margin: 0;
+            padding: 8px 15px;
+            text-decoration: none;
+            display: block;
+          }
+          &.active a {
+            background-color: #FFF;
+            -moz-border-top-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-bottom-colors: none;
+            -moz-border-left-colors: none;
+            border-image: none;
+        }
+      }
+    }
+  }
+}
+
+nav.tabs-secondary{
+  ul.secondary {
+    border-bottom: none;
+    padding: 0;
+    margin: 5px 0 10px;
+    font-size: 14px;
+
+      li{
+        display: inline-block;
+        line-height: 1em;
+        margin-right: -4px;
+        margin-right: -4px;
+        padding: 0px 5px;
+        border-right: 1px solid $grayLight;
+        a {
+          background-color: none;
+          border: none;
+          height: auto;
+          margin: 0;
+          padding: 5px 5px;
+          text-decoration: none;
+          display: block;
+        }
+        &.active a {
+          background-color: none;
+          -moz-border-top-colors: none;
+          -moz-border-right-colors: none;
+          -moz-border-bottom-colors: none;
+          -moz-border-left-colors: none;
+          border-image: none;
+      }
+    }
+  }
+}
+
+ul.action-links{
+  list-style: none;
+  margin: 10px 0;
+
+  li{
+    list-style: none;
+    display: inline-block;
+
+    a{
+      @extend .btn;
+      @extend .btn-info;
+
+      &[href="/node/add"],
+      &[href="/admin/appearance/install"],
+      &[href="/admin/modules/install"],
+      &[href="/file/add"],
+      &[href="/admin/structure/pages/add"],
+      &[href="/admin/people/create"]{
+        @include icon-plus-sign;
+        @extend .btn-success;
+
+        &:hover {
+          color: #fff;
+          text-decoration: none;
+          background-color:$grayDark;
+          *background-color: $grayDark; // Buttons in IE7 don't get borders, so darken on hover.
+
+          // transition is only when going to hover, otherwise the background behind the gradient (there for IE<=9 fallback) gets mismatched.
+          @include transition(background-color .1s linear);
+        }
+      }
+    }
+  }
+}
+
+#page-manager-links{
+  ul.links{
+    list-style: none;
+    margin: 10px 0;
+
+    li{
+      list-style: none;
+      display: inline-block;
+
+      a{
+        @extend .btn;
+        @extend .btn-info;
+
+        &[href="/node/add"],
+        &[href="/admin/appearance/install"],
+        &[href="/admin/modules/install"],
+        &[href="/file/add"],
+        &[href="/admin/structure/pages/add"],
+        &[href="/admin/people/create"]{
+          @include icon-plus-sign;
+          @extend .btn-success;
+
+          &:hover {
+            color: #fff;
+            text-decoration: none;
+            background-color:$grayDark;
+            *background-color: $grayDark; // Buttons in IE7 don't get borders, so darken on hover.
+
+            // transition is only when going to hover, otherwise the background behind the gradient (there for IE<=9 fallback) gets mismatched.
+            @include transition(background-color .1s linear);
+          }
+        }
+      }
+    }
+  }
+}
+.compact-link{
+  a{
+    @extend .btn;
+    @extend .btn-small;
+    @extend .btn-info;
+  }
+}
+// ADMIN NAV STYLES
+// ----------------
+
+#admin-menu .dropdown li li.expandable {
+  background-position: 145px center;
+
+  ul {
+    margin-top: -33px;
+  }
+}
