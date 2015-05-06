@@ -100,6 +100,7 @@ ul.action-links{
       &[href="/admin/appearance/install"],
       &[href="/admin/modules/install"],
       &[href="/file/add"],
+      &[href="/block/add"],
       &[href="/admin/structure/pages/add"],
       &[href="/admin/people/create"]{
         @include icon-plus-sign;
@@ -132,12 +133,7 @@ ul.action-links{
         @extend .btn;
         @extend .btn-info;
 
-        &[href="/node/add"],
-        &[href="/admin/appearance/install"],
-        &[href="/admin/modules/install"],
-        &[href="/file/add"],
-        &[href="/admin/structure/pages/add"],
-        &[href="/admin/people/create"]{
+        &[href="/admin/structure/pages/add"]{
           @include icon-plus-sign;
           @extend .btn-success;
 

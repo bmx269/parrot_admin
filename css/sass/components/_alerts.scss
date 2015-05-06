@@ -7,6 +7,7 @@
 // -------------------------
 
 .alert {
+  background-image: none;
   padding: 8px 35px 8px 14px;
   margin-bottom: $baseLineHeight;
   text-shadow: 0 1px 0 rgba(255,255,255,.5);
@@ -56,10 +57,40 @@
   padding-top: 14px;
   padding-bottom: 14px;
 }
+
 .alert-block > p,
 .alert-block > ul {
   margin-bottom: 0;
 }
+
 .alert-block p + p {
   margin-top: 5px;
+}
+
+div.admin-requirements,
+div.admin-required {
+  font-size: 0.9em;
+  color: #444;
+}
+
+div.messages {
+  @extend .alert;
+}
+
+table tr.ok,
+div.status,
+.ok {
+  @extend .alert-success;
+}
+
+table tr.warning,
+div.warning,
+.warning {
+  @extend .alert-info;
+}
+
+table tr.error,
+div.error,
+.error {
+  @extend .alert-error;
 }

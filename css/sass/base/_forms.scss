@@ -294,6 +294,10 @@ a:link.fieldset-title, .fieldset-legend{
     text-align: center;
 
     @include icon-move;
+
+    &:before{
+      color: $grayLight;
+    }
 }
 
 .form-wrapper {

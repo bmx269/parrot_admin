@@ -6,6 +6,7 @@
 /**
  * Correct `block` display not defined in IE 8/9.
  */
+@import url(sass/base/font-awesome.css);
 article,
 aside,
 details,
@@ -3675,6 +3676,8 @@ a:link.fieldset-title, .fieldset-legend{
     background-image: none;
     background-position: 0% 0%;
     background-repeat: repeat; }
+  .draggable a.tabledrag-handle:before {
+    color: #999999; }
 
 .form-wrapper {
   margin-bottom: 20px; }
@@ -4239,7 +4242,7 @@ ul.action-links li .btn-group > a.active,
   background-color: #f89406; }
 .btn-group.open .btn-danger.dropdown-toggle {
   background-color: #bd362f; }
-.btn-group.open .btn-success.dropdown-toggle, .btn-group.open ul.action-links li a.dropdown-toggle[href="/node/add"], ul.action-links li .btn-group.open a.dropdown-toggle[href="/node/add"], .btn-group.open ul.action-links li a.dropdown-toggle[href="/admin/appearance/install"], ul.action-links li .btn-group.open a.dropdown-toggle[href="/admin/appearance/install"], .btn-group.open ul.action-links li a.dropdown-toggle[href="/admin/modules/install"], ul.action-links li .btn-group.open a.dropdown-toggle[href="/admin/modules/install"], .btn-group.open ul.action-links li a.dropdown-toggle[href="/file/add"], ul.action-links li .btn-group.open a.dropdown-toggle[href="/file/add"], .btn-group.open ul.action-links li a.dropdown-toggle[href="/admin/structure/pages/add"], ul.action-links li .btn-group.open a.dropdown-toggle[href="/admin/structure/pages/add"], .btn-group.open ul.action-links li a.dropdown-toggle[href="/admin/people/create"], ul.action-links li .btn-group.open a.dropdown-toggle[href="/admin/people/create"], .btn-group.open #page-manager-links ul.links li a.dropdown-toggle[href="/node/add"], #page-manager-links ul.links li .btn-group.open a.dropdown-toggle[href="/node/add"], .btn-group.open #page-manager-links ul.links li a.dropdown-toggle[href="/admin/appearance/install"], #page-manager-links ul.links li .btn-group.open a.dropdown-toggle[href="/admin/appearance/install"], .btn-group.open #page-manager-links ul.links li a.dropdown-toggle[href="/admin/modules/install"], #page-manager-links ul.links li .btn-group.open a.dropdown-toggle[href="/admin/modules/install"], .btn-group.open #page-manager-links ul.links li a.dropdown-toggle[href="/file/add"], #page-manager-links ul.links li .btn-group.open a.dropdown-toggle[href="/file/add"], .btn-group.open #page-manager-links ul.links li a.dropdown-toggle[href="/admin/structure/pages/add"], #page-manager-links ul.links li .btn-group.open a.dropdown-toggle[href="/admin/structure/pages/add"], .btn-group.open #page-manager-links ul.links li a.dropdown-toggle[href="/admin/people/create"], #page-manager-links ul.links li .btn-group.open a.dropdown-toggle[href="/admin/people/create"] {
+.btn-group.open .btn-success.dropdown-toggle, .btn-group.open ul.action-links li a.dropdown-toggle[href="/node/add"], ul.action-links li .btn-group.open a.dropdown-toggle[href="/node/add"], .btn-group.open ul.action-links li a.dropdown-toggle[href="/admin/appearance/install"], ul.action-links li .btn-group.open a.dropdown-toggle[href="/admin/appearance/install"], .btn-group.open ul.action-links li a.dropdown-toggle[href="/admin/modules/install"], ul.action-links li .btn-group.open a.dropdown-toggle[href="/admin/modules/install"], .btn-group.open ul.action-links li a.dropdown-toggle[href="/file/add"], ul.action-links li .btn-group.open a.dropdown-toggle[href="/file/add"], .btn-group.open ul.action-links li a.dropdown-toggle[href="/block/add"], ul.action-links li .btn-group.open a.dropdown-toggle[href="/block/add"], .btn-group.open ul.action-links li a.dropdown-toggle[href="/admin/structure/pages/add"], ul.action-links li .btn-group.open a.dropdown-toggle[href="/admin/structure/pages/add"], .btn-group.open ul.action-links li a.dropdown-toggle[href="/admin/people/create"], ul.action-links li .btn-group.open a.dropdown-toggle[href="/admin/people/create"], .btn-group.open #page-manager-links ul.links li a.dropdown-toggle[href="/admin/structure/pages/add"], #page-manager-links ul.links li .btn-group.open a.dropdown-toggle[href="/admin/structure/pages/add"] {
   background-color: #51a351; }
 .btn-group.open .btn-info.dropdown-toggle, .btn-group.open ul.action-links li a.dropdown-toggle, ul.action-links li .btn-group.open a.dropdown-toggle, .btn-group.open #page-manager-links ul.links li a.dropdown-toggle, #page-manager-links ul.links li .btn-group.open a.dropdown-toggle, .btn-group.open .compact-link a.dropdown-toggle, .compact-link .btn-group.open a.dropdown-toggle {
   background-color: #2f96b4; }
@@ -4285,14 +4288,10 @@ ul.action-links li a[href="/node/add"] .caret,
 ul.action-links li a[href="/admin/appearance/install"] .caret,
 ul.action-links li a[href="/admin/modules/install"] .caret,
 ul.action-links li a[href="/file/add"] .caret,
+ul.action-links li a[href="/block/add"] .caret,
 ul.action-links li a[href="/admin/structure/pages/add"] .caret,
 ul.action-links li a[href="/admin/people/create"] .caret,
-#page-manager-links ul.links li a[href="/node/add"] .caret,
-#page-manager-links ul.links li a[href="/admin/appearance/install"] .caret,
-#page-manager-links ul.links li a[href="/admin/modules/install"] .caret,
-#page-manager-links ul.links li a[href="/file/add"] .caret,
 #page-manager-links ul.links li a[href="/admin/structure/pages/add"] .caret,
-#page-manager-links ul.links li a[href="/admin/people/create"] .caret,
 .btn-inverse .caret {
   border-top-color: white;
   border-bottom-color: white; }
@@ -4558,14 +4557,10 @@ ul.action-links li a.active[href="/node/add"],
 ul.action-links li a.active[href="/admin/appearance/install"],
 ul.action-links li a.active[href="/admin/modules/install"],
 ul.action-links li a.active[href="/file/add"],
+ul.action-links li a.active[href="/block/add"],
 ul.action-links li a.active[href="/admin/structure/pages/add"],
 ul.action-links li a.active[href="/admin/people/create"],
-#page-manager-links ul.links li a.active[href="/node/add"],
-#page-manager-links ul.links li a.active[href="/admin/appearance/install"],
-#page-manager-links ul.links li a.active[href="/admin/modules/install"],
-#page-manager-links ul.links li a.active[href="/file/add"],
 #page-manager-links ul.links li a.active[href="/admin/structure/pages/add"],
-#page-manager-links ul.links li a.active[href="/admin/people/create"],
 .btn-info.active,
 ul.action-links li a.active,
 #page-manager-links ul.links li a.active,
@@ -4581,6 +4576,11 @@ input[type="button"], ul.action-links li a, #page-manager-links ul.links li a, .
   border-color: #c5c5c5;
   border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25); }
 
+.btn-default {
+  background: #fff;
+  color: #111111;
+  border-color: #222222; }
+
 .btn-primary, button,
 a.button,
 input[type="reset"],
@@ -4594,7 +4594,7 @@ input[type="button"] {
 .btn-danger {
   background: #ee5f5b; }
 
-.btn-success, ul.action-links li a[href="/node/add"], ul.action-links li a[href="/admin/appearance/install"], ul.action-links li a[href="/admin/modules/install"], ul.action-links li a[href="/file/add"], ul.action-links li a[href="/admin/structure/pages/add"], ul.action-links li a[href="/admin/people/create"], #page-manager-links ul.links li a[href="/node/add"], #page-manager-links ul.links li a[href="/admin/appearance/install"], #page-manager-links ul.links li a[href="/admin/modules/install"], #page-manager-links ul.links li a[href="/file/add"], #page-manager-links ul.links li a[href="/admin/structure/pages/add"], #page-manager-links ul.links li a[href="/admin/people/create"] {
+.btn-success, ul.action-links li a[href="/node/add"], ul.action-links li a[href="/admin/appearance/install"], ul.action-links li a[href="/admin/modules/install"], ul.action-links li a[href="/file/add"], ul.action-links li a[href="/block/add"], ul.action-links li a[href="/admin/structure/pages/add"], ul.action-links li a[href="/admin/people/create"], #page-manager-links ul.links li a[href="/admin/structure/pages/add"] {
   background: #62c462; }
 
 .btn-info, ul.action-links li a, #page-manager-links ul.links li a, .compact-link a {
@@ -4661,7 +4661,8 @@ input[type="submit"] {
   float: none;
   display: inline-block; }
 
-.alert {
+.alert, div.messages {
+  background-image: none;
   padding: 8px 35px 8px 14px;
   margin-bottom: 28px;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
@@ -4672,27 +4673,34 @@ input[type="submit"] {
   border-radius: 4px;
   color: #c09853; }
 
-.alert h4 {
+.alert h4, div.messages h4 {
   margin: 0; }
 
-.alert .close {
+.alert .close, div.messages .close {
   position: relative;
   top: -2px;
   right: -21px;
   line-height: 28px; }
 
-.alert-success {
+.alert-success, table tr.ok,
+div.status,
+.ok {
   background-color: #dff0d8;
   border-color: #d6e9c6;
   color: #468847; }
 
 .alert-danger,
-.alert-error {
+.alert-error,
+table tr.error,
+div.error,
+.error {
   background-color: #f2dede;
   border-color: #eed3d7;
   color: #b94a48; }
 
-.alert-info {
+.alert-info, table tr.warning,
+div.warning,
+.warning {
   background-color: #d9edf7;
   border-color: #bce8f1;
   color: #3a87ad; }
@@ -4707,6 +4715,11 @@ input[type="submit"] {
 
 .alert-block p + p {
   margin-top: 5px; }
+
+div.admin-requirements,
+div.admin-required {
+  font-size: 0.9em;
+  color: #444; }
 
 #tab-wrapper {
   background: #555555;
@@ -4779,7 +4792,7 @@ ul.action-links {
   ul.action-links li {
     list-style: none;
     display: inline-block; }
-    ul.action-links li a[href="/node/add"]:before, ul.action-links li a[href="/admin/appearance/install"]:before, ul.action-links li a[href="/admin/modules/install"]:before, ul.action-links li a[href="/file/add"]:before, ul.action-links li a[href="/admin/structure/pages/add"]:before, ul.action-links li a[href="/admin/people/create"]:before {
+    ul.action-links li a[href="/node/add"]:before, ul.action-links li a[href="/admin/appearance/install"]:before, ul.action-links li a[href="/admin/modules/install"]:before, ul.action-links li a[href="/file/add"]:before, ul.action-links li a[href="/block/add"]:before, ul.action-links li a[href="/admin/structure/pages/add"]:before, ul.action-links li a[href="/admin/people/create"]:before {
       content: "\f055";
       font-family: FontAwesome;
       font-weight: normal;
@@ -4802,7 +4815,7 @@ ul.action-links {
       background-image: none;
       background-position: 0% 0%;
       background-repeat: repeat; }
-    ul.action-links li a[href="/node/add"]:hover, ul.action-links li a[href="/admin/appearance/install"]:hover, ul.action-links li a[href="/admin/modules/install"]:hover, ul.action-links li a[href="/file/add"]:hover, ul.action-links li a[href="/admin/structure/pages/add"]:hover, ul.action-links li a[href="/admin/people/create"]:hover {
+    ul.action-links li a[href="/node/add"]:hover, ul.action-links li a[href="/admin/appearance/install"]:hover, ul.action-links li a[href="/admin/modules/install"]:hover, ul.action-links li a[href="/file/add"]:hover, ul.action-links li a[href="/block/add"]:hover, ul.action-links li a[href="/admin/structure/pages/add"]:hover, ul.action-links li a[href="/admin/people/create"]:hover {
       color: #fff;
       text-decoration: none;
       background-color: #222222;
@@ -4818,7 +4831,7 @@ ul.action-links {
   #page-manager-links ul.links li {
     list-style: none;
     display: inline-block; }
-    #page-manager-links ul.links li a[href="/node/add"]:before, #page-manager-links ul.links li a[href="/admin/appearance/install"]:before, #page-manager-links ul.links li a[href="/admin/modules/install"]:before, #page-manager-links ul.links li a[href="/file/add"]:before, #page-manager-links ul.links li a[href="/admin/structure/pages/add"]:before, #page-manager-links ul.links li a[href="/admin/people/create"]:before {
+    #page-manager-links ul.links li a[href="/admin/structure/pages/add"]:before {
       content: "\f055";
       font-family: FontAwesome;
       font-weight: normal;
@@ -4841,7 +4854,7 @@ ul.action-links {
       background-image: none;
       background-position: 0% 0%;
       background-repeat: repeat; }
-    #page-manager-links ul.links li a[href="/node/add"]:hover, #page-manager-links ul.links li a[href="/admin/appearance/install"]:hover, #page-manager-links ul.links li a[href="/admin/modules/install"]:hover, #page-manager-links ul.links li a[href="/file/add"]:hover, #page-manager-links ul.links li a[href="/admin/structure/pages/add"]:hover, #page-manager-links ul.links li a[href="/admin/people/create"]:hover {
+    #page-manager-links ul.links li a[href="/admin/structure/pages/add"]:hover {
       color: #fff;
       text-decoration: none;
       background-color: #222222;
@@ -5082,6 +5095,9 @@ ul.action-links li a .badge,
   font-size: 12px; }
 .views-exposed-form .views-exposed-widget .form-submit {
   margin-top: 2em; }
+
+.form-radios label {
+  display: inline; }
 
 .accordion {
   margin-bottom: 28px; }
