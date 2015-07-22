@@ -26,7 +26,6 @@ stylesheets[all][] = css/style.css
 
 ;-------------- CSS FOAD -------------
 ;stylesheets[all][] = donteverloadmeagain.css
-stylesheets[all][] = mothership-layout.css
 
 ;-------------- JS -------------
 ; http://formalize.me/ for default Drupal jQuery use the
@@ -136,14 +135,14 @@ settings[mothership_classes_node_state] = 0
 settings[mothership_classes_node_id] = 0
 settings[mothership_classes_node_links_inline] = 0
 
-settings[mothership_classes_view] = 1
+settings[mothership_classes_view] = 0
 settings[mothership_classes_view_name] = 0
 settings[mothership_classes_view_view_id] = 0
 
-settings[mothership_classes_view_row] = 1
-settings[mothership_classes_view_row_count] = 1
+settings[mothership_classes_view_row] = 0
+settings[mothership_classes_view_row_count] = 0
 settings[mothership_classes_view_row_first_last] = 0
-settings[mothership_classes_view_row_rename] = 1
+settings[mothership_classes_view_row_rename] = 0
 
 settings[mothership_classes_field_name] = 0
 settings[mothership_classes_field_field] = 0

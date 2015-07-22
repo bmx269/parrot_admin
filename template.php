@@ -17,7 +17,7 @@ function parrot_admin_preprocess_page(&$vars,$hook) {
   //drupal_add_css('http://cloud.webtype.com/css/CXXXX.css','external');
 
   //googlefont
-  drupal_add_css('http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300','external');
+  drupal_add_css('//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300','external');
 
   // If this is a panel page, add template suggestions.
   // Must have Ctools Page Manager enabled. Uncomment to use.

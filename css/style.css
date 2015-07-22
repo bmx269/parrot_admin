@@ -3852,6 +3852,11 @@ tr.odd {
   border-bottom: inherit;
   padding: 0; }
 
+td.ctools-export-ui-operations .ctools-dropbutton {
+  text-align: left;
+  position: relative;
+  right: 10px; }
+
 img {
   max-width: 100%;
   width: auto\9;
@@ -4661,7 +4666,10 @@ input[type="submit"] {
   float: none;
   display: inline-block; }
 
-.alert, div.messages {
+.alert, div.messages, table tr.ok,
+div.status, table tr.warning,
+div.warning, table tr.error,
+div.error {
   background-image: none;
   padding: 8px 35px 8px 14px;
   margin-bottom: 28px;
@@ -4673,34 +4681,38 @@ input[type="submit"] {
   border-radius: 4px;
   color: #c09853; }
 
-.alert h4, div.messages h4 {
+.alert h4, div.messages h4, table tr.ok h4,
+div.status h4, table tr.warning h4,
+div.warning h4, table tr.error h4,
+div.error h4 {
   margin: 0; }
 
-.alert .close, div.messages .close {
+.alert .close, div.messages .close, table tr.ok .close,
+div.status .close, table tr.warning .close,
+div.warning .close, table tr.error .close,
+div.error .close {
   position: relative;
   top: -2px;
   right: -21px;
   line-height: 28px; }
 
-.alert-success, table tr.ok,
-div.status,
-.ok {
+.alert-success, div.messages.ok, table tr.ok,
+div.status {
   background-color: #dff0d8;
   border-color: #d6e9c6;
   color: #468847; }
 
 .alert-danger,
 .alert-error,
+div.messages.error,
 table tr.error,
-div.error,
-.error {
+div.error {
   background-color: #f2dede;
   border-color: #eed3d7;
   color: #b94a48; }
 
-.alert-info, table tr.warning,
-div.warning,
-.warning {
+.alert-info, div.messages.warning, table tr.warning,
+div.warning {
   background-color: #d9edf7;
   border-color: #bce8f1;
   color: #3a87ad; }

@@ -75,22 +75,31 @@ div.admin-required {
 
 div.messages {
   @extend .alert;
+  &.error {
+    @extend .alert-error;
+  }
+  &.warning {
+    @extend .alert-info;
+  }
+  &.ok {
+    @extend .alert-success;
+  }
 }
 
 table tr.ok,
-div.status,
-.ok {
+div.status {
+  @extend .alert;
   @extend .alert-success;
 }
 
 table tr.warning,
-div.warning,
-.warning {
+div.warning {
+  @extend .alert;
   @extend .alert-info;
 }
 
 table tr.error,
-div.error,
-.error {
+div.error {
+  @extend .alert;
   @extend .alert-error;
 }
